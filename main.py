@@ -51,7 +51,7 @@ class CafeForm(FlaskForm):
     has_toilet = BooleanField("has toilet", validators=[DataRequired()])
     can_take_call= BooleanField("can take call", validators=[DataRequired()])
     seats = StringField("seats", validators=[DataRequired()])
-    submit = SubmitField('Submit')
+    submit = SubmitField('Add cafe', render_kw={"class": "btn light-brown-btn"})
 
 
 @app.route("/")
