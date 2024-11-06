@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Coffee and Wifi{% endblock %}
+{% block content %}
+<div class="content" >
+
+    <div class="content-container">
+        <div class="flex-container">
+            <img src= "../static/image/home cafe.png"  alt="Home Cafe" class="responsive-image"/>
+            <div class="text-content">
+                <h2 class="cursive">Welcome to Our Cafe Directory!</h2>
+                <h3 class="cursive">Discover the Best Cafes in Town! ☕✨</h3>
+               <p class="cursive">At cafe & wifi, we believe that every cup of coffee tells a story. Our mission is to connect you with the best cafes in your area, whether you're looking for a cozy spot to enjoy a quiet morning, a vibrant atmosphere to catch up with friends, or a place to work while sipping your favorite brew.</p>
+                <p class="cursive">Browse our categories, read our reviews, and find your next favorite cafe. Let's embark on this coffee journey together!</p>
+                <a href="{{url_for('show_cafe')}}" class="cursive"> Cafes </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

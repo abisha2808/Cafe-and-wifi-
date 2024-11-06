@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %} cafes {% endblock %}
+{% block content %}
+<div class="card-container">
+    {% for cafe in cafes_list %}
+        <div class="cards-cafes cursive">
+            <div class="cafe-name">
+                <h2> {{cafe.name}} </h2>
+            </div>
+            <div class="card-img space-above">
+                <img src="{{cafe.img_url}}" class="card-img"/>
+
+            </div>
+            <div class="text-space">
+                <h3> Sockets : {{cafe.has_sockets}}</h3>
+                <h3> Wifi : {{cafe.has_wifi}}</h3>
+                <h3> Toilet : {{cafe.has_toilet}}</h3>
+                <h3> can take call : {{cafe.can_take_calls}}</h3>
+                <h3> Location : {{cafe.location}}</h3>
+            </div>
+            <div class="content text-space">
+                <a href="{{url_for('show_details', id=cafe.id)}}" class="cursive"> More..</a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

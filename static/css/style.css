@@ -1,0 +1,193 @@
+
+
+body {
+background-color: #D2B48C;
+color: white;
+ font-family: "Arial";
+}
+
+
+.content{
+font-size : 30px;
+color: #8B4513;
+}
+
+.cursive
+{
+    font-family: 'Beau Rivage', cursive;
+    color: #8B4513;
+}
+
+.space-above {
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.space-left_side{
+     margin-left:40px;
+     padding-left:40px;
+}
+
+.header-container a{
+   color:#8B4513;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.right{
+text-align: right;
+margin-right :40px;
+padding-right: 40px;
+#padding-top:-10px;
+font-size: 30px;
+}
+h1{
+font-size:45px;
+font-weight: bold;
+}
+
+.header-container {
+   background-color: #C19A6B;
+    display: flex; /* Flexbox to align items side by side */
+    justify-content: space-between; /* Optional: adds space between them */
+    align-items: center; /* Align items vertically centered */
+     padding: 10px;
+     padding-top:30px;
+
+}
+.search-bar {
+            padding: 5px; /* Padding inside the search bar */
+            font-size: 16px; /* Font size for the input */
+            border: 1px solid #ccc; /* Border for the input */
+            border-radius: 4px; /* Rounded corners */
+        }
+
+.content-container{
+padding-top:50px;
+padding-left:20px;
+padding-right:20px;
+}
+
+.flex-container {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Vertically center items */
+    padding: 20px; /* Optional: add padding */
+    #border: 2px solid #ddd;
+}
+
+.responsive-image {
+    width: 40%; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between the image and text */
+}
+.text-content {
+    padding-left:40px;
+    padding-right:20px;
+    width: 60%; /* Adjust the width of the text content */
+}
+
+.text-content p{
+font-size:25px;
+}
+.text-content h2{
+font-size:40px;
+font-weight: bold;
+padding-bottom:20px;
+}
+.text-content h3{
+font-size:35px;
+padding-bottom:20px;
+}
+
+.text-content a{
+font-size:40px;
+font-weight:bold;
+padding-top:100px;
+padding-left:300px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around; /* Space between cards */
+    align-items: center;
+    margin: 20px;
+    flex-wrap: wrap;
+  }
+
+.cards-cafes{
+width: 30%; /* Width of the card */
+height: 650px;
+padding: 20px;                 /* Inner padding */
+#background-color: #fff;        /* Card background color */
+border-radius: 10px;            /* Rounded corners */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+border: 2px solid #ddd;        /* Light border */
+margin: 20px;
+display: flex;
+flex-direction: column;
+}
+
+.cafe-name{
+width:100%;
+text-align: center;
+}
+
+.card-img {
+    width: 100%;  /* Ensure the image container takes full width of the card */
+    display: block;
+    height: 200px;
+    margin-bottom : 40px;
+}
+.text-space{
+   text-align: center;
+   padding-top:20px;
+}
+.container-detail{
+  margin-top:30px;
+  font-size:40px;
+  font-weight:bold;
+}
+.detail-img{
+   margin-top:30px;
+   margin-right:40px;
+   margin-left:20px;
+   height:400px;
+   width:800px;
+
+}
+.text-detail{
+   padding-left:100px;
+    padding-right:20px;
+    width: 60%; /* Adjust the width of the text content */
+   # padding-left:150px;
+}
+.text-detail h2{
+#padding-top:20px;
+padding-bottom:10px;
+}
+
+.text-detail a{
+font-size:40px;
+font-weight:bold;
+margin-top:100px;
+padding-top:200px;
+#padding-left:150px;
+}
+.middle{
+width:100%
+   text-align: center;
+}
+
+.fancy-button {
+    background-color: #D2B48C; /* Green background */
+    color: #8B4513; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for size */
+    font-size: 16px; /* Font size */
+    font-family: 'Arial', sans-serif; /* Font family */
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+

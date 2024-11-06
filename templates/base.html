@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    {% block styles %}
+    <!-- Load Bootstrap-Flask CSS here -->
+    {{ bootstrap.load_css() }}
+
+    <!-- Link to the styles.css here to apply styling to all the child templates.-->
+    <link rel="stylesheet"
+    href="../static/css/style.css"/>
+     <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+    {% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+  <div class="content" >
+    <div class="header-container">
+        <div class="space-left_side">
+            <h1 class="cursive" > Cafes & Wifi ☕</h1></div>
+        <div class="right cursive">
+             <a href="{{url_for('home')}}">Home</a>
+             <a href = "{{url_for('add_cafe')}}"> Add Cafe </a>
+             <form action="{{ url_for('search') }}" method="GET" style="display: inline;">
+                 <input type="text" name="query" class="search-bar" placeholder="Search Cafes...">
+                 <button type="submit" class="fancy-button">Search</button>
+             </form>
+        </div>
+    </div>
+    {% block content %}{% endblock %}
+  </body>
+</html>

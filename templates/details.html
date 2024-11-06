@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Cafes Details{% endblock %}
+{% block content %}
+<div class="cursive">
+    <div class="cafe-name">
+        <h2 class="container-detail"> {{cafe.name}} </h2>
+    </div>
+    <div class="flex-container">
+        <img src="{{cafe.img_url}}" class="detail-img"/>
+        <div class="text-detail">
+            <h2> Sockets : {{cafe.has_sockets}}</h2>
+            <h2> Wifi : {{cafe.has_wifi}}</h2>
+            <h2> Toilet : {{cafe.has_toilet}}</h2>
+            <h2> Can take call : {{cafe.can_take_calls}}</h2>
+            <h2> Location : {{cafe.location}}</h2>
+            <h2> No of seats : {{cafe.seats}} </h2>
+            <h2> Coffee price : {{cafe.coffee_price}} </h2>
+            <a href="{{cafe.map_url}}" class="cursive"> Map Location </a>
+        </div>
+    </div>
+    <div class="cafe-name">
+        <a href="{{url_for('show_cafe')}}" class="cursive"> Back </a>
+    </div>
+</div>
+{% endblock %}
